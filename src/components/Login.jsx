@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
 
+console.log(process.env.REACT_APP_FIRSTNAME);
+
 const Card = styled.div`
   border: solid 1px gray;
   border-radius: 0.5rem;
