@@ -24,7 +24,7 @@ const InputText = styled.input`
   border: solid 1px gray;
   border-radius: 6px;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.001rem;
   margin: 0.5rem 0;
   color: teal;
   letter-spacing: 2px;
