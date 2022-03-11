@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
@@ -44,6 +45,13 @@ const Button = styled.button`
 `;
 
 export default function Login() {
+  const [userEmail, setUserEmail] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+
+  const onLogin = () => {
+    console.log({ userEmail, userPassword });
+  };
+
   return (
     <>
       <Card>
@@ -53,14 +61,18 @@ export default function Login() {
           id="userEmail"
           name="userEmail"
           placeholder="Enter email address"
+          value={userEmail}
+          onChange={(e) => setUserEmail(e.target.value)}
         />
         <InputText
           type="password"
           id="userPassword"
           name="userPassword"
           placeholder="Enter Password"
+          value={userPassword}
+          onChange={(e) => setUserPassword(e.target.value)}
         />
-        <Button>Login</Button>
+        <Button onClick={onLogin}>Login</Button>
       </Card>
     </>
   );
