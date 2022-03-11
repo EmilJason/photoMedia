@@ -32,6 +32,16 @@ const InputText = styled.input`
     font-size: 1rem;
   }
 `;
+const Button = styled.button`
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 1px transparent;
+  background-color: green;
+  border-radius: 8px;
+`;
 
 export default function Login() {
   return (
@@ -50,6 +60,7 @@ export default function Login() {
           name="userPassword"
           placeholder="Enter Password"
         />
+        <Button>Login</Button>
       </Card>
     </>
   );
